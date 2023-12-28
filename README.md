@@ -103,9 +103,7 @@ The **Spearman** correlation distances, based on the x and y axes, **appear clos
 
 **Which method to use?**
 Euclidean distance between articles could be computed, but because each coordinate is either 0 or 1, it does not provide the continuous distribution of distances we would like (we will get many ties, since there are only so many ways to add and subtract 1 and 0).  
-
 Measurements of correlation between these binary vectors are less than ideal because the values can only be identical or non-identical, again leading to many duplicate correlation values.  
-
 So, we can use Jaccard coefficient, Cosine or Hamming distance, Manhattan distance:
 > 1. Jaccard coefficient: This is the number of intersecting items (positions where both a and b are set to 1 in our example) divided by the union (the total number of positions where either a or b are set to 1).This measure could be biased, however, if the articles have very different numbers of keywords, as a larger set of words will have a greater probability of being similar to another article. 
 > 2. We could use the cosine similarity, which measure the angle between vectors and is sensitive to the number of elements in each cosine.
