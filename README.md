@@ -107,7 +107,6 @@ The **Spearman** correlation distances, based on the x and y axes, **appear clos
 <br>
 > Measurements of correlation between these binary vectors are less than ideal because the values can only be identical or non-identical, again leading to many duplicate correlation values.
 <br>
-<br>
 >So, we can use Jaccard coefficient, Cosine or Hamming distance, Manhattan distance:
 > 1. Jaccard coefficient: This is the number of intersecting items (positions where both a and b are set to 1 in our example) divided by the union (the total number of positions where either a or b are set to 1).This measure could be biased, however, if the articles have very different numbers of keywords, as a larger set of words will have a greater probability of being similar to another article. 
 > 2. We could use the cosine similarity, which measure the angle between vectors and is sensitive to the number of elements in each cosine.
