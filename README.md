@@ -3,9 +3,9 @@ Learning about methods that we can understand how to treat the data as a set of 
 When examining data from the financial market or an e-commerce business, clustering algorithms can identify similar patterns in the data without having a specific response variable. This can provide useful information for predictive models or general summaries of the data.
 This project explains about grouping or clustering algorithms, those are know unsupervised learning, it means, we have no response value, such as sale price or clicking-trought rate, which are used to determine the optimal parameters of the algorithm.
 
-**Step 1**: identify similar datapoints using only the features.
-**Step 2**: Whether the clusters we identify share a common pattern in their responses.
-**Step 3**: So, suggets the cluster is useful in finding groups associated with the outcome we are interested in.
+**Step 1**: identify similar datapoints using only the features.  
+**Step 2**: Whether the clusters we identify share a common pattern in their responses.  
+**Step 3**: So, suggets the cluster is useful in finding groups associated with the outcome we are interested in.  
 
 Finding these clusters has steps which vary between algorithms.
 1) It is a notion of distance or similarity between items, which alows us to quantitatively compare thhem.
@@ -19,7 +19,7 @@ Finding these clusters has steps which vary between algorithms.
 > - Use affinity propagation to automatically identify the number of clusters is a dataset.   
 > - Use spectral methods to cluster data with non-linear relationships between points.
 
-## Step 1: Similarity and distance metrics
+## Similarity and distance metrics
 First step is to decide how to compare the similarity or dissimilarity between items. Can be according the properties of the data or according in our interests.  
 There are methods of distance for:  
 > - numerical, 
