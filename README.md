@@ -101,17 +101,15 @@ The Pearson coefficient, which we have calculated here, is a measure of linear c
 **SPEARMAN RESULTS**  
 The **Spearman** correlation distances, based on the x and y axes, **appear closer to each other than the Pearson** distances, suggesting from the perspective of rank correlation that the time series are more similar.
 
-> **Which method to use?**<br>
-> Euclidean distance between articles could be computed, but because each coordinate is either 0 or 1, it does not provide the continuous distribution of distances we would like (we will get many ties, since there are only so many ways to add and subtract 1 and 0).
-<br>
-<br>
-> Measurements of correlation between these binary vectors are less than ideal because the values can only be identical or non-identical, again leading to many duplicate correlation values.
-<br>
->So, we can use Jaccard coefficient, Cosine or Hamming distance, Manhattan distance:
+**Which method to use?**
+Euclidean distance between articles could be computed, but because each coordinate is either 0 or 1, it does not provide the continuous distribution of distances we would like (we will get many ties, since there are only so many ways to add and subtract 1 and 0).  
+
+Measurements of correlation between these binary vectors are less than ideal because the values can only be identical or non-identical, again leading to many duplicate correlation values.  
+
+So, we can use Jaccard coefficient, Cosine or Hamming distance, Manhattan distance:
 > 1. Jaccard coefficient: This is the number of intersecting items (positions where both a and b are set to 1 in our example) divided by the union (the total number of positions where either a or b are set to 1).This measure could be biased, however, if the articles have very different numbers of keywords, as a larger set of words will have a greater probability of being similar to another article. 
 > 2. We could use the cosine similarity, which measure the angle between vectors and is sensitive to the number of elements in each cosine.
 > 3. The Hamming distance which simply sums whether the elements of two sets are identical or not:  
-<br>
 Clearly, this measure will be best if we are primarily looking for matches and mismatches. It is also, like the Jaccard coefficient, sensitive to the number of items in each set, as simply increasing the number of elements increases the possible upper bound of the distance.
 > 4. Similar to Hamming is the Manhattan distance, which does not require the data to be binary. If we use the Manhattan distance as an example, we can use MDS again to plot the arrangement of the documents in keyword space.
 
